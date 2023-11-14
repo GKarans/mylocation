@@ -66,7 +66,8 @@ function updateOtherUserMarker(position) {
             position: position,
             map: map,
             title: 'Other User Location',
-            icon: 'path-to-other-user-icon.png', // You can customize the icon for the other user
+            // You can customize the icon for the other user here
+            // icon: 'path-to-other-user-icon.png',
         });
     } else {
         // Move the existing marker to the new position
