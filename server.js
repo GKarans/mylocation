@@ -3,9 +3,9 @@ const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
 
-const app = express();
-const server = http.createServer(app);
-const io = socketIo(server);
+const http = require('http');
+const server = http.createServer(app); // Assuming 'app' is your Express app
+const io = require('socket.io')(server);
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
